@@ -29,5 +29,9 @@ public class Student {
         this.studentCourse = scanner.nextLine();
     }
 
-    public void displayInfo() { System.out.println(" " + studentName + " " + studentEmail + " " + studentCourse); }
+    public void displayInfo() {
+        System.out.println(" " + studentName);
+        System.out.println(" " + studentEmail);
+        System.out.println(" " + studentCourse);
+    }
 }
