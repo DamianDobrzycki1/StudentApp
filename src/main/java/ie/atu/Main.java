@@ -5,5 +5,6 @@ public class Main{
         Student user = new Student();
 
         user.getUserInput();
+        user.displayInfo();
     }
 }
