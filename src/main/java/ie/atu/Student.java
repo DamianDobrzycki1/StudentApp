@@ -6,9 +6,9 @@ public class Student {
     String studentEmail;
     String studentCourse;
     public Student(){
-        this.studentName = "";
-        this.studentEmail = "";
-        this.studentCourse = "";
+        this.studentName = " ";
+        this.studentEmail = " ";
+        this.studentCourse = " ";
     }
 
     public Student(String studentName, String studentEmail, String studentCourse) {
@@ -25,4 +25,6 @@ public class Student {
         System.out.print("Enter your email");
         this.studentEmail = scanner.nextLine();
     }
+
+    public void displayInfo() { System.out.println(" " + studentName + " " + studentEmail + " " + studentCourse); }
 }
