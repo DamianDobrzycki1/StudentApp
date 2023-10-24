@@ -19,7 +19,7 @@ public class Student {
     public void getUserInput(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your name: ");
+        System.out.print("Enter your name and surname: ");
         this.studentName = scanner.nextLine();
 
         System.out.print("Enter your email: ");
