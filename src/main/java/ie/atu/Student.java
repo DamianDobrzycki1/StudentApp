@@ -16,4 +16,13 @@ public class Student {
         this.studentEmail = studentEmail;
         this.studentCourse = studentCourse;
     }
+    public void getUserInput(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name");
+        this.studentName = scanner.nextLine();
+
+        System.out.print("Enter your email");
+        this.studentEmail = scanner.nextLine();
+    }
 }
