@@ -62,6 +62,19 @@ public class Student {
         System.out.println(" " + studentCourse);
     }
 
+    public void displayInfo(){
+        System.out.println(" " + studentAName);
+        System.out.println(" " + studentAEmail);
+        System.out.println(" " + studentACourse);
+    }
+
+    public void displayInfo(){
+        System.out.println(" " + studentBName);
+        System.out.println(" " + studentBEmail);
+        System.out.println(" " + studentBCourse);
+    }
+
+
     //Getters
 
     public String getStudentName(){
