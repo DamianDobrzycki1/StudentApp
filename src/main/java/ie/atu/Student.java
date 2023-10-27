@@ -2,15 +2,16 @@ package ie.atu;
 
 import java.util.Scanner;
 public class Student {
-    String studentName;
-    String studentEmail;
-    String studentCourse;
-    String studentAName;
-    String studentAEmail;
-    String studentACourse;
-    String studentBName;
-    String studentBEmail;
-    String studentBCourse;
+     String studentName;
+     String studentEmail;
+     String studentCourse;
+     String studentAName;
+     String studentAEmail;
+     String studentACourse;
+     String studentBName;
+     String studentBEmail;
+     String studentBCourse;
+
 
     
     public Student(){
@@ -20,28 +21,25 @@ public class Student {
         this.studentAName = " ";
         this.studentAEmail = " ";
         this.studentACourse = " ";
-        this.studenBtName = " ";
-        this.studentBEmail = " ";
-        this.studentBCourse = " ";
     }
 
     //Constructor
-    public Student(String studentName, String studentEmail, String studentCourse) {
+    public void setStudent(String studentName, String studentEmail, String studentCourse) {
         this.studentName = studentName;
         this.studentEmail = studentEmail;
         this.studentCourse = studentCourse;
     }
-    public Student(String studentAName, String studentAEmail, String studentACourse){
+    public void setStudentA(String studentAName, String studentAEmail, String studentACourse){
         this.studentAName = studentAName;
         this.studentAEmail = studentAEmail;
         this.studentACourse = studentACourse;
     }
-    
-    public Student(String studentAName, String studentAEmail, String studentACourse){
-        this.studentAName = studentAName;
-        this.studentAEmail = studentAEmail;
-        this.studentACourse = studentACourse;
-        
+    public void setStudentB(String studentBName, String studentBEmail, String studentBCourse){
+        this.studentBName = studentBName;
+        this.studentBEmail = studentBEmail;
+        this.studentBCourse = studentBCourse;
+    }
+
     public void getUserInput(){
         Scanner scanner = new Scanner(System.in);
 
@@ -53,6 +51,24 @@ public class Student {
 
         System.out.print("Enter your Course: ");
         this.studentCourse = scanner.nextLine();
+
+        System.out.print("Enter your name and surname: ");
+        this.studentAName = scanner.nextLine();
+
+        System.out.print("Enter your email: ");
+        this.studentAEmail = scanner.nextLine();
+
+        System.out.print("Enter your Course: ");
+        this.studentACourse = scanner.nextLine();
+
+        System.out.print("Enter your name and surname: ");
+        this.studentBName = scanner.nextLine();
+
+        System.out.print("Enter your email: ");
+        this.studentBEmail = scanner.nextLine();
+
+        System.out.print("Enter your Course: ");
+        this.studentBCourse = scanner.nextLine();
     }
 
     // Default Constructor
@@ -61,19 +77,16 @@ public class Student {
         System.out.println(" " + studentEmail);
         System.out.println(" " + studentCourse);
     }
-
-    public void displayInfo(){
+    public void displayInfoA(){
         System.out.println(" " + studentAName);
         System.out.println(" " + studentAEmail);
         System.out.println(" " + studentACourse);
     }
-
-    public void displayInfo(){
+    public void displayInfoB(){
         System.out.println(" " + studentBName);
         System.out.println(" " + studentBEmail);
         System.out.println(" " + studentBCourse);
     }
-
 
     //Getters
 
@@ -81,12 +94,11 @@ public class Student {
         return studentName;
     }
     public String getStudentEmail(){
-        return studentEmail;
+        return studentName;
     }
     public String getStudentCourse(){
         return studentCourse;
     }
-
     //Setters
     public void setStudentName(String studentName){
         this.studentName = studentName;
@@ -98,8 +110,4 @@ public class Student {
         this.studentCourse = studentCourse;
     }
 
-    
-
-
-    
 }
