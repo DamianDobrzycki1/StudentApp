@@ -24,17 +24,17 @@ public class Student {
     }
 
     //Constructor
-    public void setStudent(String studentName, String studentEmail, String studentCourse) {
+    public void Student(String studentName, String studentEmail, String studentCourse) {
         this.studentName = studentName;
         this.studentEmail = studentEmail;
         this.studentCourse = studentCourse;
     }
-    public void setStudentA(String studentAName, String studentAEmail, String studentACourse){
+    public void StudentA(String studentAName, String studentAEmail, String studentACourse){
         this.studentAName = studentAName;
         this.studentAEmail = studentAEmail;
         this.studentACourse = studentACourse;
     }
-    public void setStudentB(String studentBName, String studentBEmail, String studentBCourse){
+    public void StudentB(String studentBName, String studentBEmail, String studentBCourse){
         this.studentBName = studentBName;
         this.studentBEmail = studentBEmail;
         this.studentBCourse = studentBCourse;
